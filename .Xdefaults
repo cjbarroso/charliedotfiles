@@ -1,0 +1,56 @@
+/* de prueba */
+ 
+URxvt*cutchars: BACKSLASH `'"'&()*,;<=>?@[]{|}
+URxvt*loginShell: true
+URxvt*scrollBar: false
+URxvt*scrollBar_right:false
+URxvt*scrollstyle:rxvt
+URxvt*foreground: #ffffff
+URxvt*background: #000000
+URxvt*shading: 40
+URxvt*transparent: true
+URxvt*inheritPixmap: true
+URxvt*tintcolor: #AAAAAA
+Rxvt.termName: rxvt-256color
+URxvt.termName: rxvt-256color
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=15
+URxvt*color0: #242424
+URxvt*color1: #bf7979
+URxvt*color2: #97b26b
+URxvt*color3: #cdcda1
+URxvt*color4: #86a2be
+URxvt*color5: #d9b798
+URxvt*color6: #a1b5cd
+URxvt*color7: #ffffff
+URxvt*color8: #cdb5cd
+URxvt*color9: #f4a45f
+URxvt*color10: #c5f779
+URxvt*color11: #ffffaf
+URxvt*color12: #98afd9
+URxvt*color13: #d7d998
+URxvt*color14: #a1b5cd
+URxvt*color15: #dedede
+URxvt*saveLines:12000
+URxvt.cursorColor: #86a2be
+URxvt*internalBorder: 0
+URxvt*jumpScroll: true
+URxvt*perl-ext-common: default,matcher,searchable-scrollback
+URxvt*urlLauncher: firefox
+URxvt*underlineColor: #86a2be
+URxvt*scrollTtyKeypress: true
+URxvt*pointerBlank: true
+URxvt*scrollWithBuffer: true
+URxvt*matcher.button: 1
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.print-pipe: ~/bin/notificar.sh
+! ---| xpdf |--- {{{
+xpdf*enableFreetype: yes
+xpdf*antialias: yes
+xpdf*foreground: black
+xpdf*background: white
+xpdf*urlCommand: firefox %s
+xpdf*viKeys: on
+!}}}
+! Tabs en rxvt - PARA QUE ? tengo screen
+! URxvt.perl-ext-common: default,tabbed
+Xft.dpi: 96

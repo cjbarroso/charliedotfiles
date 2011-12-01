@@ -1,0 +1,7 @@
+set showtabline=never
+set activate=homepage,quickmark,paste
+set passkeys+=rememberthemilk.com/home:adntcpsrzy1234kjih<Del><CR>Oq/,gi
+set passkeys+=duckduckgo.com:hjklvdmt<CR>,gi
+set passkeys+=mail.google.com:c/kjnpouexs+-raf<CR>,gi
+set defsearch=dg
+set ds=dg
