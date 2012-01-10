@@ -14,7 +14,7 @@ servers = (
   },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
   {
-    address = "chat.us.freenode.net";
+    address = "chat.freenode.net";
     chatnet = "freenode";
     port = "6667";
     use_ssl = "no";
