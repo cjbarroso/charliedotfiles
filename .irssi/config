@@ -254,6 +254,7 @@ settings = {
     autolog = "yes";
     autolog_colors = "no";
     autolog_level = "ALL -CRAP -CLIENTCRAP -CTCPS -NOTICES -SNOTES -TOPICS -INVITES -JOINS -PARTS -QUITS -MODES";
+    autolog_path = "~/irclogs/%Y/$tag/$0.%m-%d.log";
     bell_beeps = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
   };
