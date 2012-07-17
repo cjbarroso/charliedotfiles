@@ -1,0 +1,140 @@
+! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
+! check lines marked by 'FBCV13' if they are correctly updated
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Move1 :StartMoving
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+OnWindowBorder Move1 :StartMoving
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
+!mouse actions added by fluxbox-update_configs
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+
+!mouse actions added by fluxbox-update_configs
+OnToolbar Mouse4 :NextWorkspace
+OnToolbar Mouse5 :PrevWorkspace
+
+! Mouse
+OnDesktop Mouse1 :HideMenus
+OnDesktop Mouse2 :WorkspaceMenu
+OnDesktop Mouse3 :RootMenu
+OnDesktop Mouse4 :NextWorkspace
+OnDesktop Mouse5 :PrevWorkspace
+!workspaces
+Mod1 a :Workspace 1
+Mod1 s :Workspace 2
+Mod1 d :Workspace 3
+Mod1 f :Workspace 4
+Mod1 j :Workspace 5
+Mod1 k :Workspace 6
+Mod1 l :Workspace 7
+Mod1 ñ :Workspace 8
+
+Control Mod1 Down :Minimize
+Control Mod1 Up :Maximize
+Control Mod1 Left :PrevWorkspace
+Control Mod1 Right :NextWorkspace
+Mod1 KP_Add :MaximizeVertical
+Mod1 KP_Enter :MaximizeHorizontal
+Control Shift Right :ResizeHorizontal 10
+Control Shift Left :ResizeHorizontal -10
+Control Shift Down :ResizeVertical 5
+Control Shift Up :ResizeVertical -5
+Mod1 Shift Right :TakeToNextWorkspace 1
+Mod1 Shift Left :TakeToPrevWorkspace 1
+Mod1 Mod4 Left :MoveLeft 5
+Mod1 Mod4 Right :MoveRight 5
+Mod1 Mod4 Up :MoveUp 5
+Mod1 Mod4 Down :MoveDown 5
+
+
+Control Mod1 Mod4 Left :MoveLeft 20
+Control Mod1 Mod4 Right :MoveRight 20
+Control Mod1 Mod4 Up :MoveUp 20
+Control Mod1 Mod4 Down :MoveDown 20
+
+
+Shift Mod1 a :SendToWorkspace 1
+Shift Mod1 s :SendToWorkspace 2
+Shift Mod1 d :SendToWorkspace 3
+Shift Mod1 f :SendToWorkspace 4
+Shift Mod1 j :SendToWorkspace 5
+Shift Mod1 k :SendToWorkspace 6
+Shift Mod1 l :SendToWorkspace 7
+Shift Mod1 ñ :SendToWorkspace 8
+
+Mod4 F4 :KillWindow
+Mod4 t :exec rxvt-unicode +sb -tr -tint grey -sh 30 -fg white -bg black -fade 50 -name charterm
+Mod4 f :exec /etc/alternatives/x-www-browser
+
+None Menu                 :RootMenu
+Control Menu              :WorkspaceMenu
+Control Mod4 Menu         :WindowMenu
+Control Mod4 Delete       :Reconfigure
+Control Mod4 Shift Delete :Restart
+
+None XF86AudioPlay :exec mpc toggle
+None XF86AudioStop :exec mpc stop
+None XF86AudioPrev :exec mpc prev
+None XF86AudioNext :exec mpc next
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!  window - handling
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Mod4 s                    :Stick
+Shift Mod4 q              :Deiconify LastWorkspace
+Control Shift Mod4 q      :Deiconify Last OriginQuiet
+Control Shift Mod1 Mod4 q :Deiconify All OriginQuiet
+Mod4 d                    :ToggleDecor
+Mod4 h                    :Shade
+
+
+Control Mod4 1            :SetHead 1
+Control Mod4 2            :SetHead 2
+
+! 1 - cycle groups
+! 2 - skip stuck
+! 4 - skip shaded
+! 8 - cycle linear
+! 0 - cycle default
+
+Mod1 Tab                  :NextWindow {groups} (workspace=[current])   !! FBCV13 !!
+Mod1 Shift Tab            :PrevWindow {groups} (workspace=[current])  !! FBCV13 !!
+
+Shift Mod1 Mod4 Up        :FocusUp
+Shift Mod1 Mod4 Down      :FocusDown
+Shift Mod1 Mod4 Left      :FocusLeft
+Shift Mod1 Mod4 Right     :FocusRight
+
+Mod4 c :AbortKeyChain
+Mod4 e :ToggleCmd {ShowDesktop} {DeIconify all originquiet}
+
+Control Mod1 f :Fullscreen
+
+None XF86AudioLowerVolume  :Exec osdctl -b "Volumen",$(amixer sset PCM,0 5%-|grep "Front Left:"|cut -d "[" -f2|cut -d "%" -f1)
+None XF86AudioRaiseVolume  :Exec osdctl -b "Volumen",$(amixer sset PCM,0 5%+|grep "Front Left:"|cut -d "[" -f2|cut -d "%" -f1)
+
+
+Mod4 r :exec fbrun -bg black -fg cyan -title Ejecutar
+
+Mod4 l :exec xscreensaver-command -lock
+Mod4 k :exec links2 -g
+
+ChangeWorkspace :Exec echo `xprop -root _NET_CURRENT_DESKTOP_WIN_WORKSPACE_NAMES | sed 's/[,"]//g' | awk 'NR==1 {indice = $3} NR==2 {print $(indice+3)}'`|~/bin/osd_medio.sh
+
+
+
+
+

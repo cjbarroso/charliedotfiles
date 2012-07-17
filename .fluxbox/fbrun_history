@@ -1,0 +1,131 @@
+tegclient
+skype
+oowriter
+xscreensaver-command -lock
+ktorrent
+amule
+icedove
+xpad
+iceweasel
+xrxvt -e screen
+gimp
+rxvt -e screen -D -RR
+xvt
+fireofx
+inkscape
+firefo
+~/bin/firefox
+pidgin
+firefox-bin
+x-www-broser
+/opt/firefox/firefox-bin
+firefox -P
+/etc/alternatives/x-www-browser
+desiger
+firefx
+google-chrome
+screen
+slimrat-gui
+skype-call-recorder
+firerfox
+VirtualBox
+swiftfox
+sudo urxvt
+sudo rxvtr
+sudo rxvt
+swiftfos
+swiftox
+swiftfoz
+dia
+gtkterm
+leo
+kmymoney
+soffice
+workrave
+swift
+swiftfox.com
+sudo reboot
+swiftfo
+linguist
+teamviewer
+sswizard
+firefox
+multi-aterm -tint grey -sh 40 -fg white
+multi-aterm -tint grey -sh 40 -fg white -name charterm
+rxvt-unicode -fg white +sb -name rxvt -tint grey -sh 40
+rxvt-unicode  -tint grey -sh 40 -fg white -name charterm
+rxvt-unicode  -tint grey -sh 40 -name charterm
+rxvt -tr
+rxvt -tint red
+rxvt-unicode  -tr -tint grey -sh 40 -name charterm
+rxvt-unicode  -tr -tint grey -sh 40 -fg white -name charterm
+rxvt-unicode  -tr -tint grey -sh 40 -fg white +sb -name charterm
+rxvt-unicode  -tr -tint grey -sh 60 -fg white +sb -name charterm
+rxvt-unicode  -tr -tint grey -sh 120 -fg white +sb -name charterm
+rxvt-unicode  -tr -tint grey -sh 20 -fg white +sb -name charterm
+rxvt-unicode  -tr -tint grey -sh 30 -fg white +sb -name charterm
+rxvt-unicode  -tr -tint grey -sh 30 -fg white +sb -fade 30 -name charterm
+rxvt-unicode  -tr -tint grey -sh 30 -fg white +sb -fade 50 -name charterm
+xmame -s 3 -jt 1 -jdev /dev/input/js0 --rompath /home/charlie/roms samsho
+equonomize
+gmplayer
+mplayer -fs dvd://
+n
+gmplayer dvd:/1
+mplayer -fs dvd://1
+mplayer -fs dvd://2
+mplayer -fs dvd://3
+mplayer -fs dvd://4
+vlc
+links2
+links2 -g
+xev
+kdesu konqueror
+xcdroast
+gkrellm -w
+gkrellm -w &
+/opt/firefox/firefox
+firefox
+rxvt -e screen
+gimp
+rxvt -e screen -D -RR
+xvt
+fireofx
+inkscape
+firefo
+~/bin/firefox
+pidgin
+firefox-bin
+x-www-broser
+/opt/firefox/firefox-bin
+firefox -P
+/etc/alternatives/x-www-browser
+desiger
+firefx
+google-chrome
+screen
+slimrat-gui
+skype-call-recorder
+firerfox
+VirtualBox
+swiftfox
+sudo urxvt
+sudo rxvtr
+sudo rxvt
+swiftfos
+swiftox
+swiftfoz
+dia
+gtkterm
+leo
+kmymoney
+soffice
+workrave
+swift
+swiftfox.com
+sudo reboot
+swiftfo
+linguist
+teamviewer
+sswizard
+chromium-browser
