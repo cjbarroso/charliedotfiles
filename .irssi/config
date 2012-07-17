@@ -75,8 +75,9 @@ channels = (
   { name = "#debian-es"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#grulic"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#sanluix"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#machinalis"; chatnet = "freenode"; autojoin = "yes"; }
-  { name = "#machinalis-cpi"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#machinalis"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#machinalis-cpi"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#propuesta-tbo"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -263,6 +264,8 @@ settings = {
     twirssi_first_run = "no";
     twitter_usernames = "cjbarroso";
     twitter_passwords = "caquita";
+    nicklist_height = "58";
+    nicklist_width = "50";
   };
 };
 hilights = ( { text = "cjbarroso"; nick = "yes"; word = "yes"; } );

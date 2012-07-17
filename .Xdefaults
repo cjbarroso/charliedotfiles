@@ -35,22 +35,27 @@ URxvt.cursorColor: #86a2be
 URxvt*internalBorder: 0
 URxvt*jumpScroll: true
 URxvt*perl-ext-common: default,matcher,searchable-scrollback
-URxvt*urlLauncher: firefox
+URxvt*urlLauncher: google-chrome
 URxvt*underlineColor: #86a2be
 URxvt*scrollTtyKeypress: true
 URxvt*pointerBlank: true
 URxvt*scrollWithBuffer: true
 URxvt*matcher.button: 1
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
-URxvt.print-pipe: ~/bin/notificar.sh
 ! ---| xpdf |--- {{{
 xpdf*enableFreetype: yes
 xpdf*antialias: yes
 xpdf*foreground: black
 xpdf*background: white
-xpdf*urlCommand: firefox %s
+xpdf*urlCommand: google-chrome %s
 xpdf*viKeys: on
 !}}}
 ! Tabs en rxvt - PARA QUE ? tengo screen
 ! URxvt.perl-ext-common: default,tabbed
 Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault

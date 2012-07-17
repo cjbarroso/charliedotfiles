@@ -32,14 +32,16 @@ unclutter -idle 5 &
 setxkbmap -option terminate:ctrl_alt_bksp
 xscreensaver -no-splash &
 
-gpg-agent --daemon --enable-ssh-support --write-env-file "${HOME}/.gnupg/gpg-agent-info-casa"
+# gpg-agent --daemon --enable-ssh-support --write-env-file "${HOME}/.gnupg/gpg-agent-info-casa"
 
-~/bin/dropbox.py start &
-urxvtcd &
+dropbox start
+perl ~/bin/notify_receive.pl 'tcp!*!55021' libnotify&
 
 # Start the window manager:
 # exec ~/bin/musca
 # exec rxvt
-exec scrotwm
+# padsp ut
+# exec ~/bin/spectrwm
 # exec startxfce4
-# exec fluxbox
+exec fluxbox
+# exec unity
